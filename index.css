@@ -1,0 +1,544 @@
+
+html {
+    height: 100%;
+    background: rgb(52,73,94);
+
+}
+
+
+body {
+    margin: 0;
+    font-family: 'League Spartan', sans-serif;
+}
+
+
+
+.navbar {
+    /* border: dashed blue 2px; */
+    position: relative;
+    font-family: 'League Spartan', sans-serif;
+    width: 100%;
+}
+
+.navbar > ul{
+    display: inline-block;
+}
+
+.logo {
+    /* border: dashed green 2px; */
+    width: 300px;
+    height: 100px;
+    margin: 0;
+    position: relative;
+    display: flex;
+}
+
+#logo-text {
+    /* border: dashed yellow 2px; */
+    font-size: 80px;
+    font-weight: 100;
+    color: #1abc9c;
+    margin: 0;
+    margin-left: 30%;
+    margin-top: 20%;
+}
+
+.hyperlink:link, .project-link:link {
+    text-decoration: none;
+}
+
+.hyperlink:visited, .project-link:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.hyperlink:hover {
+    text-decoration: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.project-link:hover {
+    text-decoration: none;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.hyperlink:active, .project-link:active {
+    text-decoration: none;
+}
+
+.text-body {
+    font-family: 'League Spartan', sans-serif;
+    margin: auto;
+    /* border: dashed coral 2px; */
+    margin-top: 90px;
+    font-size: 35px;
+    animation: fadeIn 3s;
+    -webkit-animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+  @-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.text-body > h1 {
+    font-weight: 500;
+    text-align: center;
+    color:#0EEBBF;
+    line-height: 1.1;
+}
+
+.text-body > h2 {
+    font-weight: 200;
+    text-align: center;
+    color: #9b59b6;
+}
+
+.text-body > p {
+    font-size: 30px;
+    font-weight: 200;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    color:#1abc9c;
+}
+
+.about-photo {
+    width: 300px;
+    /* border: dashed goldenrod 2px; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.text-body-about {
+    font-family: 'League Spartan', sans-serif;
+    /* border: dashed coral 2px; */
+    font-size: 35px;
+    animation: fadeIn 3s;
+    -webkit-animation: fadeIn 3s;
+}
+
+#about-header {
+    font-weight: 200;
+}
+
+.text-body-about > h1 {
+    font-weight: 500;
+    text-align: center;
+    color:#0EEBBF;
+    margin: 0;
+}
+
+.text-body-about > h2 {
+    font-weight: 200;
+    text-align: center;
+    color: #9b59b6;
+    margin:0;
+}
+
+.text-body-about > p {
+    line-height: 1.2;
+    font-size: 25px;
+    font-weight: 200;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+    width: 80%;
+    color:#1abc9c;
+}
+
+form {
+    color:#1abc9c;
+    margin-top: 50px;
+    display: grid;
+    place-items: center;
+    /* border: dashed coral 2px; */
+
+}
+
+form > label {
+    font-weight: 100;
+    font-size: 45px;
+    text-align: center;
+}
+
+input {
+    width: 220px;
+    height: 30px;
+    background-color: #253546;
+    border-radius: 10px;
+    border: 1px solid #9b59b6;
+    color: white;
+    font-family: 'League Spartan', sans-serif;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 20px;
+}
+
+#reason-input {
+    width: 400px;
+    height: 90px;
+}
+
+textarea {
+    width: 400px;
+    height: 90px;
+    background-color: #253546;
+    border-radius: 10px;
+    border: 1px solid #9b59b6;
+    color: white;
+    font-family: 'League Spartan', sans-serif;
+    padding: 5px;
+    font-size: 20px;
+}
+
+input[type=submit] {
+    font-weight: 100;
+    color: #1abc9c;
+    margin-top: 30px;
+    width: 200px;
+    font-size: 25px;
+    padding-top: 5px;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+.project {
+    border: 5px solid #253546;
+    border-radius: 15px;
+    height: 320px;
+    width: 320px;
+    font-size: 25px;
+    margin-top: 15px;
+    margin-right: 15px;
+    text-align: center;
+    color: black;
+    padding: 5px;
+}
+
+.project > h3 {
+    color:#1abc9c;
+}
+
+#projects-footer {
+    text-align: center;
+    font-weight: 200;
+    padding-bottom: 75px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+li {
+    list-style-type: none;
+}
+
+@media only screen and (MIN-width: 1024px) {
+    .flex {
+        display: flex;
+    }
+
+    .hamb, .side-menu {
+        display: none;
+    }
+
+    .hyperlink {
+        transition: all 200ms;
+        position: absolute;
+        font-size: 20px;
+    }
+    
+    .project-link {
+        transition: all 200ms;
+        color: black;
+    }
+    
+    #projects-link {
+        position: absolute;
+        text-align: center;
+        left: 40%;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        color: #1abc9c;
+    }
+    
+    #about-link {
+        position: absolute;
+        text-align: center;
+        left: 56%;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        color: #1abc9c;
+    }
+    
+    #contact-link {
+        position: absolute;
+        text-align: center;
+        left: 72%;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        color: #1abc9c;
+    }
+
+    .logos > a > img {
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        transform: translate(-50%, -50%);
+        top: 50%;
+    }
+    
+    #Linkedin-logo {
+        left: 90.5%;
+    }
+    
+    #Github-logo {
+        left: 85%;
+    }
+}
+
+@media only screen and (MAX-width: 1024px) {
+    html {
+        height: 100%;
+        background: rgb(52,73,94);
+    }
+
+    .navbar {
+        /* border: dashed palevioletred 2px; */
+        margin-top: 30px;
+        position: sticky;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        max-height: 0;
+        overflow: hidden;
+    }
+    
+    .menu a{
+        display: block;
+        padding: 30px;
+        color: white;
+    }
+    
+    .hamb{
+        cursor: pointer;
+        float: right;
+        padding: 40px 20px;
+    }
+
+    .hamb-line {
+        background: white;
+        display: block;
+        height: 2px;
+        position: relative;
+        width: 24px;
+    }
+
+    .hamb-line::before,
+    .hamb-line::after{
+        background: white;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: .2s;
+        width: 100%;
+    }
+
+    .hamb-line::before{
+        top: 5px;
+    }
+    .hamb-line::after{
+        top: -5px;
+    }
+    
+    .side-menu {
+        display: none;
+    }
+
+    .side-menu:checked ~ .navbar {
+        max-height: 100%;
+    }
+    .side-menu:checked ~ .hamb .hamb-line {
+        background: transparent;
+    }
+    .side-menu:checked ~ .hamb .hamb-line::before {
+        transform: rotate(-45deg);
+        top:0;
+    }
+    .side-menu:checked ~ .hamb .hamb-line::after {
+        transform: rotate(45deg);
+        top:0;
+    }
+    
+
+
+
+    .logo {
+        display: inline-block;
+        /* border: dashed green 2px; */
+        width: 50%;
+        overflow: hidden;
+        height: 80px;
+        margin: 0;
+        vertical-align: middle;
+    }
+
+    #logo-text {
+        /* border: dashed yellow 2px; */
+        font-size: 100px;
+        font-weight: 100;
+        color: #1abc9c;
+        margin: 0;
+        margin-left: 15px;
+        margin-top: 10px
+    }
+    
+    .logos > a > img {
+        height: 30px;
+        width: 30px;
+        transform: translate(-50%, -50%);
+        top: 60%;
+        position: absolute;
+    }
+
+    
+    #Linkedin-logo {
+        left: 8%;
+    }
+    
+    #Github-logo {
+        left: 18%;
+    }
+
+    .hyperlink {
+        transition: all 0ms;
+        font-size: 20px;
+    }
+    
+
+    .project-link {
+        transition: all 0ms;
+        color: black;
+    }
+    
+    #projects-link {
+        position: absolute;
+        text-align: center;
+        left: 38%;
+        transform: translate(-50%, -50%);
+        top: 70%;
+        color: #1abc9c;
+    }
+    
+    #about-link {
+        position: absolute;
+        text-align: center;
+        left: 62%;
+        transform: translate(-50%, -50%);
+        top: 70%;
+        color: #1abc9c;
+    }
+    
+    #contact-link {
+        position: absolute;
+        text-align: center;
+        left: 87%;
+        transform: translate(-50%, -50%);
+        top: 70%;
+        color: #1abc9c;
+    }
+
+    .text-body {
+        font-family: 'League Spartan', sans-serif;
+        margin: auto;
+        /* border: dashed coral 2px; */
+        margin-top: 50px;
+        font-size: 35px;
+        animation: fadeIn 3s;
+        -webkit-animation: fadeIn 3s;
+    }
+
+    .text-body > h1 {
+        font-weight: 500;
+        text-align: center;
+        color:#0EEBBF;
+        line-height: 1.1;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 65px;
+    }
+    
+    .text-body > h2 {
+        font-weight: 200;
+        text-align: center;
+        color: #9b59b6;
+    }
+    
+    .text-body > p {
+        font-size: 30px;
+        font-weight: 200;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        color:#1abc9c;
+    }
+
+    .project {
+        border: 5px solid #253546;
+        border-radius: 15px;
+        height: 320px;
+        width: 320px;
+        font-size: 25px;
+        margin-top: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        color: black;
+        padding: 5px;
+    }
+    
+    #about-header {
+        font-weight: 200;
+        margin-top: 30px;
+    }
+
+    .about-photo {
+        width: 250px;
+        /* border: dashed goldenrod 2px; */
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+    textarea {
+        width: 300px !important;
+        height: 90px;
+        background-color: #253546;
+        border-radius: 10px;
+        border: 1px solid #9b59b6;
+        color: white;
+        font-family: 'League Spartan', sans-serif;
+        padding: 5px;
+        font-size: 20px;
+    }
+}
